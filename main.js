@@ -19,7 +19,8 @@ function parameterTest(paramValue) {
 }
 
 function callNativeFunc() {
-    window.webkit.messageHandlers.test.postMessage("callNativeFunc param")
+
+    window.webkit.messageHandlers.callNativeFunc.postMessage("callNativeFunc param")
 
 }
 
