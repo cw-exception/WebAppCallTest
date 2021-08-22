@@ -18,6 +18,15 @@ function parameterTest(paramValue) {
     makeH1Html("parameterTest => " + paramValue)
 }
 
+
+function parameterTwoTest(paramValue, paramValue2) {
+
+    makeH1Html("parameterTest => " + paramValue + " / " + paramValue2)
+         alert(paramValue2)
+}
+
+
+
 // 웹페이지에서 -> 네이티브의 함수 호출 . 
 function callNativeFunc() {
     // 실제로 호출되는건 아래 messageHandlers가 참조하는 callNativeFuncFromWeb 라는 이름의 함수입니다.
@@ -36,3 +45,21 @@ function makeH1Html(text) {
     document.body.appendChild(h);
 }
 
+function setToken(os, token) { // must be final
+    alert(`setToken os:${os}  token:${token}` );
+    // $.ajax({
+    //    cache : false,
+    //    url : "/bbs/updateUserToken.php",
+    //    data : {
+    //       'os' : os,
+    //       'token' : token
+    //    },
+    //    dataType: "JSON",
+    //    success : function(data, textStatus, jqXHR) {
+          
+    //    },
+    //    error : function(jqXHR, textStatus, errorThrown) {
+    //       alert("fail");
+    //    }
+    // });    
+ };
