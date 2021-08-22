@@ -26,6 +26,11 @@ function parameterTwoTest(paramValue, paramValue2) {
 }
 
 
+function requestToken() {
+    alert ('requesttoken');
+    window.jeitvjs.requestToken();
+}
+
 
 // 웹페이지에서 -> 네이티브의 함수 호출 . 
 function callNativeFunc() {
