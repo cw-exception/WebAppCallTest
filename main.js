@@ -27,8 +27,9 @@ function parameterTwoTest(paramValue, paramValue2) {
 
 
 function requestToken() {
-    alert ('requesttoken');
-    window.jeitvjs.requestToken();
+  
+    const reuslt = window.jeitvjs.requestToken();
+    alert('requetToken ressult:', result)
 }
 
 
