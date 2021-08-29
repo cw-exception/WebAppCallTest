@@ -26,6 +26,40 @@ function parameterTwoTest(paramValue, paramValue2) {
 }
 
 
+function setToken2() { // must be final
+    alert('setToken2 ');
+ };
+
+
+
+function setToken2(token) { // must be final
+    alert('setToken2 :' ,token);
+ };
+ 
+ function setToken2(os, token) { // must be final
+    alert(os);
+    alert(token);
+ };
+
+//  function setToken(os, token) { // must be final
+//     alert(token);
+//     $.ajax({
+//        cache : false,
+//        url : "/bbs/updateUserToken.php",
+//        data : {
+//           'os' : os,
+//           'token' : token
+//        },
+//        dataType: "JSON",
+//        success : function(data, textStatus, jqXHR) {
+          
+//        },
+//        error : function(jqXHR, textStatus, errorThrown) {
+//           alert("fail");
+//        }
+//     });    
+//  };
+
 function requestToken() {
   
     const reuslt = window.jeitvjs.requestToken();
